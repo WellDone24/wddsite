@@ -34,7 +34,7 @@ export default function HomePage() {
 
             <div className="actions">
               <a
-                href="mailto:info@welldonedecisions.com"
+                href="mailto:get.it.well.done@welldonedecisions.com"
                 className="button button-primary"
               >
                 Get in touch
