@@ -87,7 +87,7 @@ export default function HomePage() {
             </p>
 
             <a
-              href="mailto:info@welldonedecisions.com"
+              href="mailto:get.it.well.done@welldonedecisions.com"
               className="text-link"
             >
               Contact
