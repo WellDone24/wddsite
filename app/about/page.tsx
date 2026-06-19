@@ -1,64 +1,54 @@
-import type { Metadata } from "next";
 import PageShell from "@/components/PageShell";
 
-export const metadata: Metadata = {
-  title: "Imprint",
-};
-
-export default function ImprintPage() {
+export default function AboutPage() {
   return (
     <PageShell>
-      <article className="section-wrap page-article split-layout">
-        <h1 className="section-label">Imprint</h1>
+      <article className="page-article">
+        <div className="section-wrap split-layout">
+          <p className="section-label">
+            About
+          </p>
 
-        <div className="content-column legal-copy">
-          <section>
-            <h2>Information according to § 5 DDG</h2>
-            <p>
-              Patrick [Nachname]
-              <br />
-              [Street and number]
-              <br />
-              [Postal code and city]
-              <br />
-              Germany
+          <div className="content-column">
+            <p className="page-intro">
+              I work at the intersection of recommendation systems,
+              product development and cultural discovery.
             </p>
-          </section>
 
-          <section>
-            <h2>Contact</h2>
-            <p>
-              Email:{" "}
-              <a href="mailto:info@deinedomain.de">info@deinedomain.de</a>
-            </p>
-          </section>
+            <div className="prose">
+              <p>
+                Soundcovery started with a simple question:
+                How can people discover the artists they should not miss
+                at a festival?
+              </p>
 
-          <section>
-            <h2>Liability for content</h2>
-            <p>
-              As a service provider, I am responsible for my own content on
-              these pages under the general laws. However, I am not obliged to
-              monitor transmitted or stored third-party information or to
-              investigate circumstances that indicate illegal activity.
-            </p>
-          </section>
+              <p>
+                To answer that question I developed a multidimensional
+                artist model that focuses on interpretable musical
+                characteristics instead of conventional labels alone.
+              </p>
 
-          <section>
-            <h2>Liability for links</h2>
-            <p>
-              This website may contain links to external third-party websites
-              over whose content I have no control. The respective provider or
-              operator of the linked pages is responsible for their content.
-            </p>
-          </section>
+              <p>
+                This work has evolved into a broader interest in
+                recommendation systems, taste modelling and
+                human-readable AI interfaces.
+              </p>
+            </div>
 
-          <section>
-            <h2>Copyright</h2>
-            <p>
-              The content and works created by the site operator on these pages
-              are subject to German copyright law.
-            </p>
-          </section>
+            <div className="interests">
+              <p className="section-label">
+                Areas of interest
+              </p>
+
+              <div className="interest-list">
+                Explainable recommendations<br />
+                Taste modelling<br />
+                Cultural discovery<br />
+                Product strategy<br />
+                Human-readable AI
+              </div>
+            </div>
+          </div>
         </div>
       </article>
     </PageShell>

@@ -10,14 +10,14 @@ export const metadata: Metadata = {
     template: "%s | Patrick [Nachname]",
   },
   description:
-    "Product development, interpretable recommendation systems and cultural discovery.",
+    "Recommendation systems, product development and cultural discovery.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body>{children}</body>
