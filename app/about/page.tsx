@@ -2,54 +2,61 @@ import type { Metadata } from "next";
 import PageShell from "@/components/PageShell";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "Imprint",
 };
 
-export default function AboutPage() {
+export default function ImprintPage() {
   return (
     <PageShell>
       <article className="section-wrap page-article split-layout">
-        <h1 className="section-label">About</h1>
+        <h1 className="section-label">Imprint</h1>
 
-        <div className="content-column">
-          <p className="page-intro">
-            I work at the intersection of product development, recommendation
-            systems and cultural discovery.
-          </p>
-
-          <div className="prose">
+        <div className="content-column legal-copy">
+          <section>
+            <h2>Information according to § 5 DDG</h2>
             <p>
-              My current project, Soundcovery, started with a simple question:
-              How can people discover the artists they should not miss at a
-              festival without relying on popularity rankings, genre labels or
-              black-box recommendations?
+              Patrick [Nachname]
+              <br />
+              [Street and number]
+              <br />
+              [Postal code and city]
+              <br />
+              Germany
             </p>
+          </section>
 
+          <section>
+            <h2>Contact</h2>
             <p>
-              To answer that, I developed a multidimensional artist model that
-              describes music through interpretable characteristics rather than
-              conventional categories alone.
+              Email:{" "}
+              <a href="mailto:info@deinedomain.de">info@deinedomain.de</a>
             </p>
+          </section>
 
+          <section>
+            <h2>Liability for content</h2>
             <p>
-              Users can actively adjust their preferences, understand why
-              recommendations were made and discover suitable artists from a
-              constrained catalogue such as a festival line-up.
+              As a service provider, I am responsible for my own content on
+              these pages under the general laws. However, I am not obliged to
+              monitor transmitted or stored third-party information or to
+              investigate circumstances that indicate illegal activity.
             </p>
+          </section>
 
+          <section>
+            <h2>Liability for links</h2>
             <p>
-              This work has led to a broader interest in systems that model
-              taste in a persistent and human-readable way. The underlying
-              approach may also be applicable in areas such as fashion, media
-              and other domains where subjective preference matters.
+              This website may contain links to external third-party websites
+              over whose content I have no control. The respective provider or
+              operator of the linked pages is responsible for their content.
             </p>
-          </div>
+          </section>
 
-          <section className="interests">
-            <h2 className="section-label">Current interests</h2>
-            <p className="interest-list">
-              Explainable recommendations · Taste modelling · Live-event
-              discovery · Human-readable AI · Product validation
+          <section>
+            <h2>Copyright</h2>
+            <p>
+              The content and works created by the site operator on these pages
+              are subject to German copyright law.
             </p>
           </section>
         </div>

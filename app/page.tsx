@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import PageShell from "@/components/PageShell";
 
@@ -6,6 +7,15 @@ export default function HomePage() {
     <PageShell>
       <section className="hero section-wrap">
         <div className="hero-content">
+          <Image
+            src="/logo.png"
+            alt="WDD logo"
+            width={220}
+            height={220}
+            priority
+            className="hero-logo"
+          />
+
           <p className="eyebrow">
             Product · Recommendation Systems · Cultural Discovery
           </p>

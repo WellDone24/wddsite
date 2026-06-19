@@ -1,10 +1,10 @@
 :root {
   color-scheme: dark;
-  --background: #050505;
-  --foreground: #f7f7f7;
-  --muted: rgba(247, 247, 247, 0.62);
-  --subtle: rgba(247, 247, 247, 0.42);
-  --line: rgba(247, 247, 247, 0.12);
+  --background: #001b2d;
+  --foreground: #f7f8f6;
+  --muted: rgba(226, 237, 242, 0.72);
+  --subtle: rgba(160, 195, 210, 0.72);
+  --line: rgba(173, 205, 218, 0.18);
 }
 
 * {
@@ -89,12 +89,20 @@ a {
 }
 
 .hero {
-  padding-top: 118px;
-  padding-bottom: 130px;
+  padding-top: 84px;
+  padding-bottom: 118px;
 }
 
 .hero-content {
   max-width: 930px;
+}
+
+.hero-logo {
+  display: block;
+  width: clamp(132px, 17vw, 210px);
+  height: auto;
+  margin: 0 0 46px;
+  mix-blend-mode: screen;
 }
 
 .eyebrow,
@@ -111,7 +119,7 @@ a {
 .hero h1 {
   max-width: 960px;
   margin: 26px 0 0;
-  font-size: clamp(3.15rem, 7.2vw, 6.3rem);
+  font-size: clamp(2.9rem, 6.3vw, 5.55rem);
   font-weight: 600;
   letter-spacing: -0.055em;
   line-height: 0.99;
@@ -151,20 +159,21 @@ a {
 
 .button-primary:hover,
 .button-primary:focus-visible {
-  background: rgba(247, 247, 247, 0.84);
+  background: #dfeaf0;
 }
 
 .button-secondary {
-  border-color: rgba(247, 247, 247, 0.22);
+  border-color: rgba(173, 205, 218, 0.34);
 }
 
 .button-secondary:hover,
 .button-secondary:focus-visible {
-  border-color: rgba(247, 247, 247, 0.55);
+  border-color: rgba(223, 234, 240, 0.8);
 }
 
 .content-section {
   border-top: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(7, 43, 65, 0.18), rgba(0, 27, 45, 0));
 }
 
 .split-layout {
@@ -201,7 +210,7 @@ a {
 
 .lead {
   margin: 0;
-  color: rgba(247, 247, 247, 0.86);
+  color: rgba(247, 248, 246, 0.9);
   font-size: clamp(1.45rem, 2.4vw, 2rem);
   letter-spacing: -0.025em;
   line-height: 1.5;
@@ -211,7 +220,7 @@ a {
 .legal-copy a {
   display: inline-block;
   margin-top: 28px;
-  border-bottom: 1px solid rgba(247, 247, 247, 0.34);
+  border-bottom: 1px solid rgba(160, 195, 210, 0.58);
   padding-bottom: 2px;
 }
 
@@ -232,7 +241,7 @@ a {
 
 .interest-list {
   margin: 22px 0 0;
-  color: rgba(247, 247, 247, 0.76);
+  color: rgba(226, 237, 242, 0.82);
   line-height: 1.9;
 }
 
