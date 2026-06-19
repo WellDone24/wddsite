@@ -1,4 +1,3 @@
-import Link from "next/link";
 import PageShell from "@/components/PageShell";
 
 export default function HomePage() {
@@ -9,43 +8,36 @@ export default function HomePage() {
           <div className="hero-content">
             <img
               src="/logo.png"
-              alt="WellDone"
+              alt="WellDone Decisions"
               className="hero-logo"
             />
 
             <p className="eyebrow">
-              Product · Recommendation Systems · Cultural Discovery
+              Interim Management · Real Estate · Transformation
             </p>
 
             <h1>
-              I build systems for better discovery.
+              Clarity in complex situations.
             </h1>
 
             <p className="hero-copy">
-              I work on recommendation systems, product concepts and interfaces
-              for domains where taste, context and subjective preference matter.
+              I help real estate organizations navigate growth, complexity and
+              change.
             </p>
 
             <p className="hero-copy">
-              My current project is Soundcovery, a discovery system for festival
-              line-ups.
+              With more than 16 years of experience across workout situations,
+              controlling, risk management and transformation projects, I focus
+              on understanding problems, setting priorities and driving
+              execution.
             </p>
 
             <div className="actions">
-              <Link
-                href="/about"
+              <a
+                href="mailto:info@welldonedecisions.com"
                 className="button button-primary"
               >
-                About
-              </Link>
-
-              <a
-                href="https://soundcovery.com"
-                target="_blank"
-                rel="noreferrer"
-                className="button button-secondary"
-              >
-                Soundcovery
+                Get in touch
               </a>
             </div>
           </div>
@@ -55,17 +47,18 @@ export default function HomePage() {
       <section className="content-section">
         <div className="section-wrap split-layout">
           <p className="section-label">
-            Current project
+            Focus
           </p>
 
           <div className="content-column">
-            <h3>Soundcovery</h3>
+            <p className="lead">
+              Growth situations, restructuring, operational improvement and
+              pragmatic digitalization.
+            </p>
 
             <p>
-              Soundcovery helps festival visitors identify artists they are
-              likely to care about — based on interpretable musical
-              characteristics instead of popularity, generic genre labels or
-              opaque recommendation scores.
+              I support organizations that need experienced leadership,
+              analytical rigor and a strong focus on implementation.
             </p>
           </div>
         </div>
@@ -74,20 +67,30 @@ export default function HomePage() {
       <section className="content-section">
         <div className="section-wrap split-layout">
           <p className="section-label">
-            Open to conversations
+            Experience
           </p>
 
           <div className="content-column">
             <p className="lead">
-              Explainable recommendation systems, taste modelling, cultural
-              discovery and early-stage product development.
+              16+ years in real estate.
+            </p>
+
+            <p>
+              Office and residential portfolios with a combined investment
+              volume exceeding €6 billion.
+            </p>
+
+            <p>
+              I am interested in decision support and AI as an accelerator of
+              sound thinking. My side project soundcovery explores this through
+              recommendation systems and explainable AI.
             </p>
 
             <a
-              href="mailto:info@deinedomain.de"
+              href="mailto:info@welldonedecisions.com"
               className="text-link"
             >
-              info@deinedomain.de
+              Contact
             </a>
           </div>
         </div>
